@@ -1,0 +1,92 @@
+
+
+#arrange{
+  
+    flex-wrap:wrap;
+    justify-content:flex-start;
+     gap:17px; 
+     padding: 10px;
+     
+}
+
+.boxe{
+    margin: 20px 0 10px 0px;
+    
+    /* width:300px; */
+}
+.boxe, .buy-btn{
+    flex:0 0 15%;
+    max-width:350px;
+    padding:8px;
+    transition: transform 0.5s;
+    text-align:center;
+    border:1px solid lightgrey;
+    border-radius:10%;
+}
+
+
+.boxe:hover{
+    opacity:0.9;
+    transform: translateY(-6px); 
+    cursor:pointer;
+
+}
+.boxe img{
+    max-width:140px;
+    height:140px;
+    /* object-fit: cover; */
+    border-radius: 20px;
+    
+}
+.boxe .buy-btn{
+    background: #222222;
+    margin: -9px;
+    margin-top: 4px;
+    padding-top:7px;
+    height:50px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+
+.rev{
+    text-decoration: none;
+}
+.boxe .buy-btn a{ 
+    color:#ffff;
+    text-decoration: none;
+} 
+
+.buy-btn a:hover{
+   color:rgb(143, 143, 143);
+}
+
+.container{
+    /* padding-left: 180px; */
+    display: flex;
+    margin:2vmax 8vmax auto;
+    width:80vw;
+    flex-wrap: wrap;
+}
+
+.span{
+    font-size: 1px;
+}
+
+
+@media screen and  (max-width:700px )
+{
+    .boxe{
+        left: auto;
+        padding-right: 10px;
+    }
+  
+    .boxe img{
+        max-width:70px;
+        height:70px;
+        /* object-fit: cover; */
+        border-radius: 20px;
+        
+    }
+
+}
+
